@@ -1,0 +1,169 @@
+<html lang="ko">
+<head>
+   
+   <title>JAEMIN_McDonalds</title>
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="1955년 작은 레스토랑에서부터 지금에 이르기까지 고객이 가장 좋아하는 장소이자, 음식을 즐기는 최고의 방법이 되기 위해 맥도날드는 오늘도 노력합니다.">
+   <meta name="keywords" content="맥딜리버리, ">
+   <meta name="author" content="McDonald's.">
+
+   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+   <!-- <link rel="icon" type="image/x-icon" href="img/favicon_apple16.png" sizes="16x16"> -->
+
+   <!-- <link rel="stylesheet" type="text/css" href="css/common.css"> -->
+   <link rel="stylesheet" type="text/css" href="css/index.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>  
+
+   <link rel="stylesheet" href="css/animate.css">
+
+   <script src="js/wow.min.js"></script>
+
+  
+</head>
+
+<body>
+    <!-- Swiper JS -->
+  <!-- <script src="../package/swiper-bundle.min.js"></script> -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+    
+    <header>        
+        <nav id="gnb">
+            <div id="logo">
+                <a href=""><figure></figure></a>
+            </div>
+            <ul id="gnb_menu" onmouseover="subOn();" onmouseout="subOff();">                    
+                <div><a href=""><li>Menu</li></a></div>
+                <div><a href=""><li>Store</li></a></div>
+                <div><a href=""><li>What's New</li></a></div>
+                <div><a href=""><li>Story</li></a></div>
+            </ul>
+            <ul id="gnb_recruit">
+                <a href=""><li id="rec">RECRUIT</li></a>
+                <a href=""><li id="eng">ENG</li></a>
+                <a href=""><img src="img/ico_search.png" alt=""><li></li></a>
+            </ul>            
+        </nav>     
+        <section id="sub" onmouseover="subOn();" onmouseout="subOff();">
+            <div id="sub_wrap">
+                <ul id="sub_menu">                    
+                    <li>
+                        <ul id="sub_menu_1">
+                            <a href=""><li>버거</li></a>
+                            <a href=""><li>맥모닝</li></a>
+                            <a href=""><li>해피밀</li></a>
+                            <a href=""><li>사이드 & 디저트</li></a>
+                            <a href=""><li>맥카페 & 음료</li></a>
+                            <a href=""><li>365일 즐거운 혜택</li></a>
+                        </ul>
+                    </li>                                
+                    <li>
+                        <ul id="sub_menu_2">
+                            <a href=""><li>매장찾기</li></a>
+                            <a href=""><li>맥딜리버리</li></a>
+                            <a href=""><li>맥드라이브</li></a>
+                            <a href=""><li>임차문의</li></a>
+                        </ul>
+                    </li>                         
+                    <li>
+                        <ul id="sub_menu_3">
+                            <a href=""><li>프로모션</li></a>
+                            <a href=""><li>새로운 소식</li></a>
+                            <a href=""><li>이달의 해피밀</li></a>
+                        </ul>
+                    </li>                         
+                    <li> 
+                        <ul id="sub_menu_4">
+                            <a href=""><li>브랜드 소개</li></a>
+                            <a href=""><li>사회적 책임과 지원</li></a>
+                            <a href=""><li>맥도날드 경쟁력</li></a>
+                            <a href=""><li>맥도날드 사람들</li></a>
+                        </ul>
+                    </li>                
+                </ul>            
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section>
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <video autoplay muted loop>
+                           <source src="video/pc.mp4" type="video/mp4"> 
+                           <source src="video/pc.ogg" type="video/ogg">
+                           당신의 브라우저는 비디오 화일 재생을 지원하지 않습니다.
+                        </video>
+                     </div>
+                    <div class="swiper-slide"><img src="img/recycle_slide.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/eggbul_slide.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/mcchicken_slide.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/pie_slide.png" alt=""></div>
+                    
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>      
+
+        <section>
+            <aside id="delivery_banner" class="animate__animated animate__bounce" >
+                    <a href="">
+                        <img src="img/btn_delivery_01.png" alt="">
+                    </a>                    
+                </aside>
+                <aside id="btn_banner" lass="animate__animated animate__bounce" >
+                    <a href="">
+                        <img src="img/btn_top.png" alt="" onclick="window.scrollTo(0,0)" >
+                    </a>
+                </aside>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    
+    <!-- 슬라이드 스크립트 -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        });
+    </script>
+
+    <script>
+         function subOn(){
+       document.getElementById("sub").style="height:335px; display:flex;  ";
+    //    document.getElementById("swiper-container").style="position=fixed;";
+    }
+    function subOff(){
+       document.getElementById("sub").style="display:none";
+    }
+    </script>
+</body>
+</html>
