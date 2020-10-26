@@ -1,5 +1,5 @@
-<html lang="ko">
-<head>
+<html lang="ko" >
+<head id="head">
    
    <title>JAEMIN_McDonalds</title>
 
@@ -10,29 +10,56 @@
    <meta name="author" content="McDonald's.">
 
    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-   <!-- <link rel="icon" type="image/x-icon" href="img/favicon_apple16.png" sizes="16x16"> -->
+   
+   <link id="css" rel="stylesheet" type="text/css" href="css/index.css">
+   <link id="css_m" rel="stylesheet" type="text/css" href="css/index mobile.css">
 
-   <!-- <link rel="stylesheet" type="text/css" href="css/common.css"> -->
-   <link rel="stylesheet" type="text/css" href="css/index.css">
    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>  
 
    <link rel="stylesheet" href="css/animate.css">
-
    <script src="js/wow.min.js"></script>
+   <script src="https://kit.fontawesome.com/a4f7eacf0e.js" crossorigin="anonymous"></script>
 
+   <!-- <link rel="stylesheet" media="screen and (min-width: 0px) and (max-width: 1200px)" href="css/index mobile.css" /> -->
   
 </head>
 
-<body>
+
+<!-- <head id="head_m">
+   
+  <title>mobile JAEMIN_McDonalds</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="1955년 작은 레스토랑에서부터 지금에 이르기까지 고객이 가장 좋아하는 장소이자, 음식을 즐기는 최고의 방법이 되기 위해 맥도날드는 오늘도 노력합니다.">
+  <meta name="keywords" content="맥딜리버리, ">
+  <meta name="author" content="McDonald's.">
+
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico"> 
+  
+  <link rel="stylesheet" type="text/css" href="css/index mobile.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>  
+
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="js/wow.min.js"></script>
+  <script src="https://kit.fontawesome.com/a4f7eacf0e.js" crossorigin="anonymous"></script>
+</head> -->
+
+
+
+
+<body id="pc">
     <!-- Swiper JS -->
   <!-- <script src="../package/swiper-bundle.min.js"></script> -->
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   
     
-    <header>        
+    <header id="hero">        
         <nav id="gnb">
             <div id="logo">
                 <a href=""><figure></figure></a>
@@ -48,7 +75,8 @@
                 <a href=""><li id="eng">ENG</li></a>
                 <a href=""><img src="img/ico_search.png" alt=""><li></li></a>
             </ul>            
-        </nav>     
+        </nav>         
+
         <section id="sub" onmouseover="subOn();" onmouseout="subOff();">
             <div id="sub_wrap">
                 <ul id="sub_menu">                    
@@ -90,9 +118,9 @@
         </section>
     </header>
 
-    <main>
-        <section>
-            <!-- Swiper -->
+    <main id="main">
+        <!-- 슬라이드 -->
+        <section id="slide">            
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -116,54 +144,662 @@
             </div>
         </section>      
 
+        <!-- 딜리버리 배너 -->
         <section>
             <aside id="delivery_banner" class="animate__animated animate__bounce" >
                     <a href="">
                         <img src="img/btn_delivery_01.png" alt="">
                     </a>                    
                 </aside>
-                <aside id="btn_banner" lass="animate__animated animate__bounce" >
+                <aside id="btn_banner" class="animate__animated animate__bounce" >
                     <a href="">
                         <img src="img/btn_top.png" alt="" onclick="window.scrollTo(0,0)" >
                     </a>
                 </aside>
         </section>
+      
 
+        <!-- 메인박스 -->
+        <div id="mainbox_title_pc">
+            <h2>McDonald's LIVE</h2>
+        </div>             
+
+
+        <section id="mainbox_1"> 
+            <div class="mainbox_wrap">                  
+               <ul class="mainbox_ul">
+                  <li>
+                    <figure><img src="img/1_1.png"></figure> 
+                    <h3 class="mainbox_info_pc">빨대가 필요 없는 뚜껑이를 만나보세요!</h3>
+                  </li>
+                  <li>
+                    <figure><img src="img/1_2.png"></figure> 
+                    <h3 class="mainbox_info_pc">담백한 맥치킨에 케이준 소스를 더해<br>알싸~한 끝맛!</h3>
+                  </li>
+                  <li>
+                    <figure><img src="img/1_3.png"></figure> 
+                    <h3 class="mainbox_info_pc">보랏빛 달콤함 마침내 한국 상륙!<br>타로 파이</h3>
+                  </li>    
+               </ul>
+            </div>
+         </section>
+
+                 
+         <section id="mainbox_2"> 
+            <div class="mainbox_wrap">                  
+               <ul class="mainbox_ul">                 
+                  <li>
+                    <figure><img src="img/1_4.png"></figure> 
+                    <h3 class="mainbox_info_pc">언제나 가까이<br>맥드라이브와 함께</h3>
+                  </li>
+                  <li>
+                    <figure><img src="img/1_5.png"></figure> 
+                    <h3 class="mainbox_info_pc">1+등급 계란으로 더욱 신선하게!<br>에그 불고기 버거 세트 4,000원</h3>
+                  </li>
+                  <li>
+                    <figure><img src="img/1_6.png"></figure> 
+                    <h3 class="mainbox_info_pc">맥딜리버리에서 1만 5천원 이상 주문 시<br>3천 M포인트 사용</h3>
+                  </li> 
+               </ul>
+            </div>
+         </section>
+
+         <div id="btn_more_1_pc" onclick="openBoxPc1()">
+          <img src="img/btn_more.png" alt="">
+        </div>
+
+        <script>
+          function openBoxPc1(){          
+            document.getElementById("mainbox_3").style="display:block;";
+            document.getElementById("mainbox_4").style="display:block;";
+            document.getElementById("btn_more_2_pc").style="display:block;";
+            document.getElementById("btn_more_1_pc").style="display:none;";
+          }
+        </script>
+
+         <section id="mainbox_3"> 
+            <div class="mainbox_wrap">                  
+               <ul class="mainbox_ul">
+                  <li>
+                    <figure><img src="img/2_1.png"></figure> 
+                    <h3 class="mainbox_info_pc">이 촉촉한<br>빵의 비결은 뭐지?</h3>
+                  </li>
+                  <li>
+                    <figure><img src="img/2_2.png"></figure> 
+                    <h3 class="mainbox_info_pc">사르르~녹는<br>치즈의 비밀은?</h3>
+                  </li>
+                  <li>
+                    <figure><img src="img/2_3.png"></figure> 
+                    <h3 class="mainbox_info_pc">살아있는 아삭한<br>채소의 비결은?</h3>
+                  </li>    
+               </ul>
+            </div>
+         </section>
+         
+         <section id="mainbox_4"> 
+            <div class="mainbox_wrap">                  
+               <ul class="mainbox_ul">                 
+                  <li>
+                    <figure><img src="img/2_4.png"></figure> 
+                    <h3 class="mainbox_info_pc">작렬하는 풍미의<br>비밀은?</h3>
+                  </li>
+                  <li>
+                    <figure><img src="img/2_5.png"></figure> 
+                    <h3 class="mainbox_info_pc">처음부터 끝까지<br>풍성한 맛!</h3>
+                  </li>
+                  <li>
+                    <figure><img src="img/2_6.png"></figure> 
+                    <h3 class="mainbox_info_pc">육즙이 꽉 찬 패티,<br>어떻게 구운거지?</h3>
+                  </li> 
+               </ul>
+            </div>
+         </section>
+
+         <div id="btn_more_2_pc" onclick="openBoxPc2()">
+          <img src="img/btn_more.png" alt="">
+        </div>
+        <script>
+          function openBoxPc2(){          
+            document.getElementById("mainbox_5").style="display:block;";
+            document.getElementById("mainbox_6").style="display:block;";
+            document.getElementById("btn_more_2_pc").style="display:none;";
+            document.getElementById("btn_more_1_pc").style="display:none;";
+            document.getElementById("btn_more_3_pc").style="display:block;";
+
+          }
+        </script>
+
+
+         <section id="mainbox_5"> 
+            <div class="mainbox_wrap">                  
+               <ul class="mainbox_ul">
+                  <li>
+                    <figure><img src="img/3_1.png"></figure> 
+                    <h3 class="mainbox_info_pc">1등급 우유에 퐁당 빠진 바나나</h3>
+                  </li>
+                  <li>
+                    <figure><img src="img/3_2.png"></figure> 
+                    <h3 class="mainbox_info_pc">더 편리해진 맥도날드 앱 사용법</h3>
+                  </li>
+                  <li>
+                    <figure><img src="img/3_3.png"></figure> 
+                    <h3 class="mainbox_info_pc">2900원 부터 즐기는<br>맥모닝 콤보를 만나보세요</h3>
+                  </li>    
+               </ul>
+            </div>
+         </section>
+         
+         <section id="mainbox_6"> 
+            <div class="mainbox_wrap">                  
+               <ul class="mainbox_ul">                 
+                  <li>
+                    <figure><img src="img/3_4.png"></figure> 
+                    <h3 class="mainbox_info_pc">농장에서 레스토랑까지<br>좋은 음식을 제공하기 위한 맥도날드의<br>노력을 확인하세요!</h3>
+                  </li>
+                  <li>
+                    <figure><img src="img/3_5.png"></figure> 
+                    <h3 class="mainbox_info_pc">취향저격 쿠폰부터 쏠쏠한 정보까지! 지금 맥도날드 앱 가입하고 쿠폰받자</h3>
+                  </li>
+                  <li>
+                    <figure><img src="img/3_6.jpg"></figure> 
+                    <h3 class="mainbox_info_pc">맥도날드 버거는 어떻게 만들어질까?<br>                        
+                        주방은 어떻게 관리되고 있을까?<br>
+                        전국 매장에서 직접 확인해보세요!</h3>
+                  </li> 
+               </ul>
+            </div>
+         </section>
+
+         <div id="btn_more_3_pc" onclick="openBoxPc3()">
+          <img src="img/btn_more.png" alt="">
+        </div>
+
+        <script>
+          function openBoxPc3(){          
+            document.getElementById("mainbox_7").style="display:block;";
+            document.getElementById("btn_more_1_pc").style="display:none;";
+            document.getElementById("btn_more_2_pc").style="display:none;";
+            document.getElementById("btn_more_3_pc").style="display:none;";
+
+          }
+        </script>
+
+         <section id="mainbox_7"> 
+            <div class="mainbox_wrap">                  
+               <ul class="mainbox_ul">
+                  <li>
+                    <figure><img src="img/4_1.jpg"></figure> 
+                    <h3 class="mainbox_info_pc">전문 코치들의 체계적이고 전문적인<br>교육을 통해 지역사회 행복에 기여합니다</h3>
+                  </li>
+                  <li>
+                    <figure><img src="img/4_2.png"></figure> 
+                    <h3 class="mainbox_info_pc">귀하의 토지,건물에 맥도날드를 <br>유치하세요!</h3>
+                  </li>
+                  <li>
+                    <!-- <figure><img src=""></figure> 
+                    <h3 class="mainbox_info_pc"></h3> -->
+                  </li>    
+               </ul>
+            </div>
+         </section>
     </main>
 
-    <footer>
+    <footer id="footer">
+      <div id="footer_wrap">
 
-    </footer>
-    
-    <!-- 슬라이드 스크립트 -->
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-        spaceBetween: 30,
-        loop: true,
-        centeredSlides: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        });
-    </script>
 
-    <script>
-         function subOn(){
-       document.getElementById("sub").style="height:335px; display:flex;  ";
-    //    document.getElementById("swiper-container").style="position=fixed;";
-    }
-    function subOff(){
-       document.getElementById("sub").style="display:none";
-    }
-    </script>
-</body>
+        <div class="footer_nav">
+            <ul class="footer_privacy">
+              <li><a href="">개인정보 처리방침</li>
+              <li><a href="">위치정보 이용약관</li>
+              <li><a href="">사이트맵</li>
+              <li><a href="">임차문의</li>
+              <li><a href="">고객문의</li>
+              <li><a href="">인재채용</li>
+            </ul>
+            <ul class="footer_info">
+                <li><a href="">한국맥도날드(유)</li>
+                <li><a href="">대표이사: 앤토니 마티네즈</a></li>
+                <li><a href="">사업자등록번호: 101-81-26409</li></a>
+                <li><a href="">전화주문: 1600-5252</li></a>
+                <li><a href="">COPYRIGHT © 2019 ALL RIGHTS RESERVED BY McDonald's.</li></a>
+            </ul>
+            <ul class="footer_sns">
+                <li><a href=""><img src="img/f_sns.png" alt=""></a></li>
+                <li><a href=""><img src="img/i_sns.png" alt=""></a></li>
+                <li><a href=""><img src="img/y_sns.png" alt=""></a></li>
+                <li><a href=""><img src="img/k_sns.png" alt=""></a></li>
+                <div class="footer_wa">
+                  <a href=""><img src="img/web_accessibility.png" alt=""></a>
+                </div>
+            </ul>
+            
+
+        </div>
+
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+<!-- -------------ㅡmobile------------------ -->
+
+
+
+
+
+
+
+
+<header id="hero_m">        
+  <nav id="gnb_m">
+      <div id="logo_m">
+          <a href=""><figure></figure></a>
+      </div>            
+      <div id="gnb_m_button" onclick="gnbOn();">
+          <figure></figure>
+      </div>
+  </nav>  
+</header>
+
+<header id="sub_m">  
+  <nav id="gnb_m_open"> 
+    <div id="logo_m">
+      <a href=""><figure></figure></a>
+    </div>            
+    <div id="gnb_m_button_2" onclick="gnbOff();">
+      <figure></figure>
+    </div> 
+  </nav> 
+   
+  <div id="gnb_menu_m_open_wrap">
+   <div id="gnb_menu_m_open">
+    <a href=""><li>Menu</li></a>
+    <a href=""><li>Store</li></a>
+    <a href=""><li>What's New</li></a>
+    <a href=""><li>Story</li></a>  
+   </div> 
+   </div>   
+</header>
+
+<script>    
+   function gnbOn(){
+      document.getElementById("sub_m").style="height:100%; display:block;";     
+      document.getElementById("gnb_m_button").style="height:100%; display:none;";     
+      document.getElementById("delivery_banner_m").style="display:none;";  
+      document.getElementById("btn_banner_m").style="display:none;";  
+   }  
+</script>
+<script>    
+  function gnbOff(){
+     document.getElementById("sub_m").style="height:0%; display:none;";
+     document.getElementById("gnb_m_button").style="height:100%; display:block;"; 
+     document.getElementById("delivery_banner_m").style="display:block;";  
+     document.getElementById("btn_banner_m").style="display:block;";  
+  }  
+</script>
+
+
+<main id="main_m">
+
+  <!-- 슬라이드 -->
+  <section id="slide_m">            
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <video autoplay muted loop>
+                   <source src="video/mobile.mp4" type="video/mp4"> 
+                   <source src="video/mobile.ogg" type="video/ogg">
+                   당신의 브라우저는 비디오 화일 재생을 지원하지 않습니다.
+                </video>
+             </div>
+            <div class="swiper-slide"><img src="img/recycle_mobile_slide.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/eggbul_mobile_slide.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/mchicken_mobile_slide.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/pie_mobile_slide.png" alt=""></div>
+            
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>      
+
+ <!-- 딜리버리 배너 -->
+ <section>
+  <aside id="delivery_banner_m" class="animate__animated animate__bounce" >
+          <a href="">
+              <img src="img/btn_delivery_01.png" alt="">
+          </a>                    
+      </aside>
+      <aside id="btn_banner_m" class="animate__animated animate__bounce" >
+          <a href="">
+              <img src="img/bg_ico_topbtn.png" alt="" onclick="window.scrollTo(0,0)" >
+          </a>
+      </aside>
+  </section>
+
+
+  
+  <!-- 메인박스 -->
+  <div id="mainbox_title">
+    <h2>McDonald's LIVE</h2>
+  </div>           
+  
+  <section id="mainbox_1_m"> 
+    <div class="mainbox_wrap_m">                  
+       <ul class="mainbox_ul_m">
+          <li>
+            <figure><img src="img/1_1.png"></figure> 
+            <h3 class="mainbox_info_m">빨대가 필요 없는 뚜껑이를 만나보세요!</h3>
+          </li>
+          <li>
+            <figure><img src="img/1_2.png"></figure> 
+            <h3 class="mainbox_info_m">담백한 맥치킨에 케이준 소스를 더해 알싸~한 끝맛!</h3>
+          </li>                
+       </ul>
+    </div>
+ </section>
+
+
+ <section id="mainbox_2_m"> 
+  <div class="mainbox_wrap_m">                  
+     <ul class="mainbox_ul_m"> 
+      <li>
+        <figure><img src="img/1_3.png"></figure> 
+        <h3 class="mainbox_info_m">보랏빛 달콤함 마침내 한국 상륙! 타로 파이</h3>
+      </li>                    
+        <li>
+          <figure><img src="img/1_4.png"></figure> 
+          <h3 class="mainbox_info_m">언제나 가까이 맥드라이브와 함께</h3>
+        </li>              
+     </ul>
+  </div>
+</section>     
+
+
+<div id="btn_more_1_m" onclick="openbox_1()">
+<img src="img/btn_more.png" alt="">
+</div>
+
+<script>
+function openbox_1(){          
+  document.getElementById("mainbox_3_m").style="display:block";
+  document.getElementById("mainbox_4_m").style="display:block";
+  document.getElementById("mainbox_5_m").style="display:none";
+  document.getElementById("mainbox_6_m").style="display:none";document.getElementById("mainbox_7_m").style="display:none";
+  document.getElementById("mainbox_8_m").style="display:none";
+  document.getElementById("mainbox_9_m").style="display:none";
+  document.getElementById("mainbox_10_m").style="display:none";
+  document.getElementById("btn_more_1_m").style="display:none";
+  document.getElementById("btn_more_2_m").style="display:block";
+  document.getElementById("btn_more_3_m").style="display:none";
+  document.getElementById("btn_more_4_m").style="display:none";
+}
+</script>
+
+
+<section id="mainbox_3_m"> 
+  <div class="mainbox_wrap_m">                  
+     <ul class="mainbox_ul_m">
+      <li>
+        <figure><img src="img/1_5.png"></figure> 
+        <h3 class="mainbox_info_m">1+등급 계란으로 더욱 신선하게! 에그 불고기 버거 세트 4,000원</h3>
+      </li>
+      <li>
+        <figure><img src="img/1_6.png"></figure> 
+        <h3 class="mainbox_info_m">맥딜리버리에서 1만 5천원 이상 주문 시 3천 M포인트 사용</h3>
+      </li>               
+     </ul>
+  </div>
+</section>
+
+
+<section id="mainbox_4_m"> 
+  <div class="mainbox_wrap_m">                  
+     <ul class="mainbox_ul_m"> 
+      <li>
+        <figure><img src="img/2_1.png"></figure> 
+        <h3 class="mainbox_info_m">이 촉촉한 빵의 비결은 뭐지?</h3>
+      </li>
+      <li>
+        <figure><img src="img/2_2.png"></figure> 
+        <h3 class="mainbox_info_m">사르르~녹는 치즈의 비밀은?</h3>
+      </li>            
+     </ul>
+  </div>
+</section>
+
+
+<div id="btn_more_2_m" onclick="openbox_2()">
+<img src="img/btn_more.png" alt="">
+</div>
+
+<script>
+function openbox_2(){          
+  document.getElementById("mainbox_5_m").style="display:block";
+  document.getElementById("mainbox_6_m").style="display:block";
+  document.getElementById("mainbox_7_m").style="display:none";
+  document.getElementById("mainbox_8_m").style="display:none";
+  document.getElementById("mainbox_9_m").style="display:none";
+  document.getElementById("mainbox_10_m").style="display:none";
+  document.getElementById("btn_more_1_m").style="display:none";
+  document.getElementById("btn_more_2_m").style="display:none";
+  document.getElementById("btn_more_3_m").style="display:block";
+  document.getElementById("btn_more_4_m").style="display:none";
+}
+</script>
+
+
+<section id="mainbox_5_m"> 
+  <div class="mainbox_wrap_m">                  
+     <ul class="mainbox_ul_m">
+      <li>
+        <figure><img src="img/2_3.png"></figure> 
+        <h3 class="mainbox_info_m">살아있는 아삭한 채소의 비결은?</h3>
+      </li>                    
+        <li>
+          <figure><img src="img/2_4.png"></figure> 
+          <h3 class="mainbox_info_m">작렬하는 풍미의 비밀은?</h3>
+        </li>              
+     </ul>
+  </div>
+</section>
+
+<section id="mainbox_6_m"> 
+  <div class="mainbox_wrap_m">                  
+     <ul class="mainbox_ul_m">  
+      <li>
+        <figure><img src="img/2_5.png"></figure> 
+        <h3 class="mainbox_info_m">처음부터 끝까지 풍성한 맛!</h3>
+      </li>
+      <li>
+        <figure><img src="img/2_6.png"></figure> 
+        <h3 class="mainbox_info_m">육즙이 꽉 찬 패티, 어떻게 구운거지?</h3>
+      </li>             
+     </ul>
+  </div>
+</section>
+
+<div id="btn_more_3_m" onclick="openbox_3()">
+<img src="img/btn_more.png" alt="">
+</div>
+
+<script>
+function openbox_3(){          
+  document.getElementById("mainbox_7_m").style="display:block";
+  document.getElementById("mainbox_8_m").style="display:block";
+  document.getElementById("mainbox_9_m").style="display:none";
+  document.getElementById("mainbox_10_m").style="display:none";
+  document.getElementById("btn_more_1_m").style="display:none";
+  document.getElementById("btn_more_2_m").style="display:none";
+  document.getElementById("btn_more_3_m").style="display:none";
+  document.getElementById("btn_more_4_m").style="display:block";
+  document.getElementById("btn_more_5_m").style="display:none";
+}
+</script>
+
+
+<section id="mainbox_7_m"> 
+  <div class="mainbox_wrap_m">                  
+     <ul class="mainbox_ul_m">
+      <li>
+        <figure><img src="img/3_1.png"></figure> 
+        <h3 class="mainbox_info_m">1등급 우유에 퐁당 빠진 바나나</h3>
+      </li>
+      <li>
+        <figure><img src="img/3_2.png"></figure> 
+        <h3 class="mainbox_info_m">더 편리해진 맥도날드 앱 사용법</h3>
+      </li>            
+     </ul>
+  </div>
+</section>
+
+<section id="mainbox_8_m"> 
+<div class="mainbox_wrap_m">                  
+   <ul class="mainbox_ul_m">
+    <li>
+      <figure><img src="img/3_3.png"></figure> 
+      <h3 class="mainbox_info_m">2900원 부터 즐기는 맥모닝 콤보를 만나보세요</h3>
+    </li>                   
+      <li>
+        <figure><img src="img/3_4.png"></figure> 
+        <h3 class="mainbox_info_m">농장에서 레스토랑까지 좋은 음식을 제공하기 위한 맥도날드의 노력을 확인하세요!</h3>
+      </li>          
+   </ul>
+</div>
+</section>
+
+<div id="btn_more_4_m" onclick="openbox_4()">
+<img src="img/btn_more.png" alt="">
+</div>
+
+<script>
+function openbox_4(){          
+  document.getElementById("mainbox_9_m").style="display:block";
+  document.getElementById("mainbox_10_m").style="display:block";
+  document.getElementById("btn_more_1_m").style="display:none";
+  document.getElementById("btn_more_2_m").style="display:none";
+  document.getElementById("btn_more_3_m").style="display:none";
+  document.getElementById("btn_more_4_m").style="display:none";
+  document.getElementById("btn_more_5_m").style="display:block";
+}
+</script>
+
+
+
+<section id="mainbox_9_m"> 
+<div class="mainbox_wrap_m">                  
+   <ul class="mainbox_ul_m">
+    <li>
+      <figure><img src="img/3_5.png"></figure> 
+      <h3 class="mainbox_info_m">취향저격 쿠폰부터 쏠쏠한 정보까지! 지금 맥도날드 앱 가입하고 쿠폰받자</h3>
+    </li>
+    <li>
+      <figure><img src="img/3_6.jpg"></figure> 
+      <h3 class="mainbox_info_m">맥도날드 버거는 어떻게 만들어질까?<br>                        
+          주방은 어떻게 관리되고 있을까? 
+          전국 매장에서 직접 확인해보세요!</h3>
+    </li>           
+   </ul>
+</div>
+</section>
+
+
+<section id="mainbox_10_m"> 
+<div class="mainbox_wrap_m">                  
+   <ul class="mainbox_ul_m">
+    <li>
+      <figure><img src="img/4_1.jpg"></figure> 
+      <h3 class="mainbox_info_m">전문 코치들의 체계적이고 전문적인 교육을 통해 지역사회 행복에 기여합니다</h3>
+    </li>
+    <li>
+      <figure><img src="img/4_2.png"></figure> 
+      <h3 class="mainbox_info_m">귀하의 토지,건물에 맥도날드를 유치하세요!</h3>
+    </li>          
+   </ul>
+</div>
+</section>
+
+</main>
+
+<footer id="footer_m">
+<div id="footer_wrap">
+  <div class="footer_nav">
+      <ul class="footer_privacy">
+        <li><a href="">개인정보 처리방침</li>
+        <li><a href="">위치정보 이용약관</li>
+        <li><a href="">사이트맵</li>
+        <li><a href="">임차문의</li>
+        <li><a href="">고객문의</li>
+        <li><a href="">인재채용</li>
+      </ul>
+      <ul class="footer_info">
+          <li><a href="">한국맥도날드(유)</li>
+          <li><a href="">대표이사: 앤토니 마티네즈</a></li>
+          <li><a href="">사업자등록번호: 101-81-26409</li></a>
+          <li><a href="">전화주문: 1600-5252</li></a>
+          <li><a href="">COPYRIGHT © 2019 ALL RIGHTS RESERVED BY McDonald's.</li></a>
+      </ul>
+      <ul class="footer_sns">
+          <li><a href=""><img src="img/f_sns.png" alt=""></a></li>
+          <li><a href=""><img src="img/i_sns.png" alt=""></a></li>
+          <li><a href=""><img src="img/y_sns.png" alt=""></a></li>
+          <li><a href=""><img src="img/k_sns.png" alt=""></a></li>
+          <div class="footer_wa">
+            <a href=""><img src="img/web_accessibility.png" alt=""></a>
+          </div>
+      </ul>
+      
+
+  </div>
+
+</div>
+</footer>
+
+
+<!-- 슬라이드 스크립트 -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+  spaceBetween: 30,
+  loop: true,
+  // autoHover: true,
+  // pause: false,
+  centeredSlides: true,
+  autoplayDisableOnInteraction:false,
+  autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+  },
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+  },
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+  });
+</script>
+
+<script>
+   function subOn(){
+ document.getElementById("sub").style="height:335px; display:flex;  ";
+//    document.getElementById("swiper-container").style="position=fixed;";
+}
+function subOff(){
+ document.getElementById("sub").style="display:none";
+}
+</script>
+
+
 </html>
